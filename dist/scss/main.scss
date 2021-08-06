@@ -1,9 +1,11 @@
-@import "./resets";
-@import "./variables";
-@import "./home";
-@import "./config";
-@import "./menu";
-@import "./about";
+@import "resets";
+@import "variables";
+@import "home";
+@import "config";
+@import "menu";
+@import "about";
+@import "projects";
+@import "contact";
 
 body {
   background: $primary-color;
