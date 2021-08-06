@@ -2,6 +2,7 @@
 @import "./variables";
 @import "./home";
 @import "./config";
+@import "./menu";
 
 body {
   background: $primary-color;
@@ -36,6 +37,7 @@ main {
   .social-icons {
     position: fixed;
     bottom: 1rem;
+    left: 1rem;
 
     a {
       padding: 0.4rem;
