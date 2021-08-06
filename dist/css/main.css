@@ -156,7 +156,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   padding: 2rem 0;
-  font-weight: 300;
+  font-weight: 500;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -417,6 +417,117 @@
       grid-template-columns: 1fr;
   grid-gap: 2rem;
   font-size: 1.5rem;
+}
+
+.contact__list {
+  margin: 0 3rem;
+}
+
+.contact .social-icons {
+  position: initial;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 75vw;
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects__bio-image {
+    height: 50vh;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 85vw;
+  }
+  .projects__item {
+    border-bottom: 8px solid #ff652f;
+  }
+  .projects__btn {
+    font-size: 1.5rem;
+  }
+  .about__bio {
+    font-size: 2rem;
+  }
+  .about__bio-image {
+    height: 50vh;
+  }
+  .about__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .about .text-secondary {
+    font-size: 3rem;
+  }
+  .about .jobs__job {
+    border-bottom: 8px solid #ff652f;
+  }
+  .jobs__job .text-secondary {
+    font-size: 2.5rem;
+  }
+  .jobs__job h3 {
+    font-size: 2rem;
+  }
+  .jobs__job h6 {
+    font-size: 1.2rem;
+  }
+  .jobs__job p {
+    font-size: 1.3rem;
+  }
 }
 
 body {
